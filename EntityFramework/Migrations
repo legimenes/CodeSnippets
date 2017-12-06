@@ -1,0 +1,7 @@
+/* Migrations no Entity Framework */
+
+// Comandos para habilitar o Migrations
+Enable-Migrations
+Add-Migration {migration_name}
+Update-Database
+Update-Database -TargetMigration:0 -Force
