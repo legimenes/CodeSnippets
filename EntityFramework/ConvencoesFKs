@@ -1,0 +1,39 @@
+/* Convenções utilizadas pelo Entiy Framework para tratar foreign-keys */
+
+(1) Entity Framework não cria a foreign-key
++Course               +Department
+Id                    Id
+Description           Description
+DepartmentId
+
+(2) Entity Framework cria automaticamente uma foreign-key chamada "Department_Id"
++Course               +Department
+Id                    Id
+Description           Description
+virtual Department    Department
+
+(3) Entity Framework cria automaticamente uma foreign-key chamada "DepartmentId"
++Course               +Department
+Id                    Id
+Description           Description
+DepartmentId
+virtual Department Department
+
+(4) Entity Framework cria automaticamente uma foreign-key chamada "Department_Id"
++Course               +Department
+Id                    Id
+Description           Description
+                      virtual ICollection<Course> Course
+
+(5) Entity Framework cria automaticamente uma foreign-key chamada "DepartmentId"
++Course               +Department
+Id                    Id
+Description           Description
+DepartmentId          virtual ICollection<Course> Course
+
+(6) O Entity Freamework cria automaticamente uma foreign-key chamada "DepartmentId"
++Course                         +Department
+Id                              Id
+Description                     Description
+DepartmentId                    virtual ICollection<Course> Course
+virtual Department Department
