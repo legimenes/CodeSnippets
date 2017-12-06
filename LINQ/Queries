@@ -1,0 +1,21 @@
+/* Queries LINQ */
+
+// Obter todos os índices
+List<int> indices = cargas.ToList()
+  .Select((c, i) => new { Carga = c, Index = i })
+  .Where(f => f.Carga.Tipo == "Coleta")
+  .OrderByDescending(p => p.Carga.OrdemColeta)
+  .Select(g => g.Index).ToList();
+
+// Usando GroupBy em uma coleção
+List<Cliente> clientesAtivos = clientes.ToList()
+  .FindAll(c => c.Ativo)
+  .GroupBy(ca => new { filial = ca.Filial.Id, ramo = ca.Ramo.Id })
+  .Select(g => g.First())
+  .OrderBy(o => o.Filial.Id).ToList();
+
+// Obter itens com propriedade complexa sem repetição em uma coleção
+List<Empresas> empresas = taxasExclusivas.Where(w => w.NIVEL == TaxasFretesExclusivas.Nivel.Empresa)
+  .Select(s => s.EMPRESA)
+  .GroupBy(g => g.ID)
+  .Select(f => f.First()).ToList();
