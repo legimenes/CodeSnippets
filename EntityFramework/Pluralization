@@ -1,0 +1,10 @@
+/* Pluralization no Entity Framework */
+
+// Não usar pluralization no nome das tabelas
+protected override void OnModelCreating(DbModelBuilder dbModelBuilder)
+{
+  // Todas as tabelas:
+  dbModelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+  // Em tabelas específicas:
+  dbModelBuilder.Entity<Account>().ToTable("Account");
+}
