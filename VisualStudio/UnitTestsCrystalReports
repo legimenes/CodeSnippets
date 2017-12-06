@@ -1,0 +1,10 @@
+/* Configurar UnitTests com Crystal Reports */
+
+// Habilitar testes usando Crystal Reports
+// (1) Abrir o arquivo de configuração vo vstest de acordo com a arquitetura (x86 ou x64)
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\CommonExtensions\Microsoft\TestWindow\vstest.executionengine.x86.exe.config
+
+// (2) Adicionar a entrada
+<startup useLegacyV2RuntimeActivationPolicy="true">
+  <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5"/>
+</startup>
