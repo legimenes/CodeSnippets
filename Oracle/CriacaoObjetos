@@ -1,0 +1,32 @@
+/* Criação de objetos de banco de dados */
+
+// Criar usuário de sistema
+create user SISTEMA
+  identified by ABC2010
+  default tablespace USERS
+  temporary tablespace TEMP
+  profile DEFAULT
+  
+  grant connect to SISTEMA with admin option
+  grant dba to SISTEMA with admin option
+  grant unlimited tablespace to SISTEMA with admin option
+  
+// Criar tablespace
+// No prompt de comando no diretório da base de dados
+C:\oracle\oradata\NOMEDABASE
+
+create tablespace tms
+  logging
+  datafile 'C:\oracle\oradata\NOMEDABASE/base.dbf' 
+  size 32m 
+  autoextend on 
+  next 32m maxsize 500m
+  extent management local
+
+create tablespace tmsind
+  logging
+  datafile 'C:\oracle\oradata\NOMEDABASE/baseind.dbf' 
+  size 32m 
+  autoextend on 
+  next 32m maxsize 500m
+  extent management local
