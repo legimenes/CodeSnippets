@@ -36,3 +36,9 @@ appcmd add app /site.name:{WEBSITE_NAME} /path:/{VIRTUALAPPLICATION_NAME} /physi
 
 Ex.:
 appcmd add app /site.name:site1 /path:/sitecliente1 /physicalPath:c:\sitecliente1
+
+// Alterar o Application Pool da Aplicação Virtual criada
+appcmd set app {WEBSITE_NAME}/{VIRTUALAPPLICATION_NAME} /applicationPool:{APLICATIONPOOL_NAME}
+
+Ex.:
+appcmd set app cliente1/tmscliente1 /applicationPool:PoolCliente1
