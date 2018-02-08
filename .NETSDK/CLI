@@ -1,0 +1,13 @@
+/* Linhas de comando do .NET CLI (Interface de linha de comando) */
+
+//Criar solution
+dotnet new sln --name {NOME_SOLUTION}
+
+//Criar projeto class library
+dotnet new classlib --name {NOME_PROJETO}
+
+//Adicionar projeto à solution
+dotnet sln add .\{DIRETORIO_PROJETO}\{NOME_PROJETO}.csproj
+
+//Build da solution
+dotnet build {NOME_SOULUTION}.sln
