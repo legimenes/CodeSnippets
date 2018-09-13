@@ -4,7 +4,7 @@
 dotnet new sln --name {NOME_SOLUTION}
 
 //Criar projeto class library
-dotnet new classlib --name {NOME_PROJETO}
+dotnet new classlib --name {NOME_PROJETO} [-f {netcoreapp2.0|netcoreapp2.1}]
 
 //Adicionar projeto à solution
 dotnet sln add .\{DIRETORIO_PROJETO}\{NOME_PROJETO}.csproj
