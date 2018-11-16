@@ -1,0 +1,9 @@
+/* Comandos da biblioteca Newtonsoft.Json */
+
+// Deserializar json desconsiderando o root
+JObject jObject = JObject.Parse(jsonResponse);
+var rootElement = jObject.First;
+NFe nfe = rootElement.First.ToObject<NFe>();
+
+// Deserializar para um objeto XmlDocument
+XmlDocument xmlDoc = JsonConvert.DeserializeXmlNode(jsonResponse);
