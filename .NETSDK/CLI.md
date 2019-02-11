@@ -1,6 +1,6 @@
-/* Linhas de comando do .NET CLI (Interface de linha de comando) do .NET Core */
+<h1>Linhas de comando do .NET CLI (Interface de linha de comando) do .NET Core</h1>
 
-//Criar solution
+<b>Criar solution</b>
 dotnet new sln --name {NOME_SOLUTION}
 
 //Criar projeto class library
