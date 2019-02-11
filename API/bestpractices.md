@@ -8,13 +8,13 @@ POST /employees<br>
 
 <b>Versionamento</b><br>
 O versionamento garante a funcionalidade das API's em aplicações que estejam referenciando suas versões mais antigas. O uso do atributo RoutePrefix é uma solução fácil para isso. Ex.:<br>
-<code>
-[RoutePrefix("api/v2/Persons")]<br>
-public class PersonsController : ApiController<br>
-{<br>
-    public IHttpActionResult Get()<br>
-    {<br>
-      //...<br>
-    }<br>
-}<br>
-</code>
+```
+[RoutePrefix("api/v2/Persons")]
+public class PersonsController : ApiController
+{
+    public IHttpActionResult Get()
+    {
+      //...
+    }
+}
+```
