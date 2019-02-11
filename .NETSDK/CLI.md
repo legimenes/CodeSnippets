@@ -1,4 +1,4 @@
-<h3>Linhas de comando do .NET CLI (Interface de linha de comando) do .NET Core</h3>
+<h3>Linhas de comando do .NET CLI (Interface de linha de comando) do .NET Core</h3><br>
 
 <b>Criar solution</b><br>
 dotnet new sln --name {NOME_SOLUTION}
