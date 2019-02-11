@@ -1,9 +1,9 @@
-<h1>Linhas de comando do .NET CLI (Interface de linha de comando) do .NET Core</h1>
+<h2>Linhas de comando do .NET CLI (Interface de linha de comando) do .NET Core</h2>
 
-<b>Criar solution</b>
+<b>Criar solution</b><br>
 dotnet new sln --name {NOME_SOLUTION}
 
-//Criar projeto class library
+<b>Criar projeto class library</b><br>
 dotnet new classlib --name {NOME_PROJETO} [-f {netcoreapp2.0|netcoreapp2.1}|netstandard2.0]
 
 //Adicionar referência de um projeto dentro de outro
