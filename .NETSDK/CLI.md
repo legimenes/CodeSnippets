@@ -1,4 +1,3 @@
-<h2>Linhas de comando do .NET CLI (Interface de linha de comando) do .NET Core</h2>
 <h3>Linhas de comando do .NET CLI (Interface de linha de comando) do .NET Core</h3>
 
 <b>Criar solution</b><br>
