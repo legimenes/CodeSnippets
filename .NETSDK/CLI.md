@@ -13,7 +13,7 @@ dotnet add {NOME_PROJETO} reference {NOME_PROJETO_REFERENCIADO}
 dotnet sln add .\{DIRETORIO_PROJETO}\{NOME_PROJETO}.csproj
 
 <b>Adicionar pacote do nuget</b><br>
-<i>Ir para a pasta do projeto desejado</i>
+<i>Na pasta do projeto desejado</i><br>
 dotnet add package {NOME_PACOTE} [--version={NUMERO_VERSAO}]
 
 <b>Build da solution</b><br>
