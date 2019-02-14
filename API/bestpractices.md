@@ -21,15 +21,15 @@ public class PersonsController : ApiController
 
 <b>Retorno</b></br>
 Usar apenas os mais comuns status code do http como:<br>
-200 – OK: Tudo está funcionando.<br>
-201 – OK: Um novo recurso foi criado.<br>
-204 – OK: O recurso foi deletado com sucesso.<br>
-304 – Not Modified: O cliente pode usar os dados cacheados.<br>
-400 – Bad Request: A requisição estava inválida ou não pode ser processada. O erro deve ser informado.<br>
-401 – Unauthorized: A requisição requer uma autenticação do usuário.<br>
-403 – Forbidden: O servidor entendeu a requisição mas está foi recusada ou o acesso não é permitido.<br>
-404 – Not found: Não há recurso por trás da URI.<br>
-500 - Internal Server Error: O stacktrace deve ser logado e não retornado na resposta.
+<i>200 OK</i> - Processamento efetuado com sucesso.<br>
+<i>201 OK</i> - Um novo recurso foi criado.<br>
+<i>204 OK</i> - O recurso foi deletado com sucesso.<br>
+<i>304 Not Modified</i> - O cliente pode usar os dados cacheados.<br>
+<i>400 Bad Request</i> - A requisição estava inválida ou não pode ser processada. O erro deve ser informado.<br>
+<i>401 Unauthorized</i> - A requisição requer uma autenticação do usuário.<br>
+<i>403 Forbidden</i> - O servidor entendeu a requisição mas está foi recusada ou o acesso não é permitido.<br>
+<i>404 Not found</i> - Não há recurso por trás da URI.<br>
+500 Internal Server Error</i> - O stacktrace deve ser logado e não retornado na resposta.
 
 <i>Métodos GET</i><br>
 Geralmente, um método GET bem-sucedido retorna o código de status HTTP 200 (OK). Não retornar 404 se o conjuntos de dados for vazio, retornar o conjunto de dados vazio mesmo. Somente se o recurso não puder ser encontrado, o método deve retornar 404 (Não encontrado).
