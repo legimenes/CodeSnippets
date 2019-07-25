@@ -24,7 +24,7 @@ public class PersonsController : ApiController
 ```
 
 <h2>Retorno</h2>
-Usar preferencialmente os <i>status code</i> do http mais comuns como:<br>
+Usar preferencialmente os <i>status code</i> mais comuns do http como:<br>
 <i>200 OK</i> - Processamento efetuado com sucesso.<br>
 <i>201 OK</i> - Um novo recurso foi criado.<br>
 <i>204 OK</i> - O recurso foi deletado com sucesso.<br>
