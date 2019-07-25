@@ -1,13 +1,17 @@
-<h3>Melhores práticas na construção de API's RESTful</h3><br>
+<h1>Melhores práticas na construção de API's RESTful</h1>
 
-<b>Semântica</b><br>
-Organizar as API's em torno de recursos baseando seus nomes em pronomes e não verbos. Ex.:<br>
-GET /employees<br>
-GET /employees/123<br>
-POST /employees<br>
+<h3>Semântica</h3>
+Organizar as API's em torno de recursos baseando seus nomes em pronomes e não verbos. Ex.:
 
-<b>Versionamento</b><br>
-O versionamento garante a funcionalidade das API's em aplicações que estejam referenciando suas versões mais antigas. O uso do atributo RoutePrefix é uma solução fácil para isso. Ex.:<br>
+```
+GET /employees
+GET /employees/123
+POST /employees
+```
+
+<h3>Versionamento</h3>
+O versionamento garante a funcionalidade das API's em aplicações que estejam referenciando suas versões mais antigas. O uso do atributo RoutePrefix é uma solução fácil para isso. Ex.:
+
 ```
 [RoutePrefix("api/v2/Persons")]
 public class PersonsController : ApiController
@@ -19,8 +23,8 @@ public class PersonsController : ApiController
 }
 ```
 
-<b>Retorno</b></br>
-Usar apenas os mais comuns status code do http como:<br>
+<h3>Retorno</h3>
+Usar apenas os <i>status code</i> do http mais comuns como:
 <i>200 OK</i> - Processamento efetuado com sucesso.<br>
 <i>201 OK</i> - Um novo recurso foi criado.<br>
 <i>204 OK</i> - O recurso foi deletado com sucesso.<br>
@@ -31,10 +35,10 @@ Usar apenas os mais comuns status code do http como:<br>
 <i>404 Not found</i> - Não há recurso por trás da URI.<br>
 <i>500 Internal Server Error</i> - O stacktrace deve ser logado e não retornado na resposta.
 
-<i>Métodos GET</i><br>
+<i>Métodos GET</i>
 Geralmente, um método GET bem-sucedido retorna o código de status HTTP 200 (OK). Não retornar 404 se o conjuntos de dados for vazio, retornar o conjunto de dados vazio mesmo. Somente se o recurso não puder ser encontrado, o método deve retornar 404 (Não encontrado).
 
-<i>Métodos POST, PUT</i><br>
+<i>Métodos POST, PUT</i>
 Se o método cria um novo recurso, ele retornará o código de status HTTP 201 (Criado). O URI do novo recurso está incluído no cabeçalho Location da resposta. O corpo da resposta contém uma representação do recurso.
 Se o método executa algum processamento, mas não cria um novo recurso, pode ser que ele retorne o código de status HTTP 200 e inclua o resultado da operação no corpo da resposta. Como alternativa, se não houver nenhum resultado para retornar, o método pode retornar o código de status HTTP 204 (Sem conteúdo) sem o corpo da resposta.
 Se o cliente coloca os dados inválidos na solicitação, o servidor deve retornar o código de status HTTP 400 (Solicitação incorreta). O corpo da resposta pode conter informações adicionais sobre o erro ou um link para um URI que forneça mais detalhes.
