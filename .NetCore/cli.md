@@ -5,10 +5,10 @@
 dotnet new sln --name {NOME_SOLUTION}
 
 //Criar projeto class library
-dotnet new classlib --name {NOME_PROJETO} [-f {netcoreapp2.0|netcoreapp2.1|netcoreapp2.2}|netstandard2.0]
+dotnet new classlib --name {NOME_PROJETO} [-f {netcoreapp2.0|netcoreapp2.1|netcoreapp2.2|netcoreapp3.0}|{netstandard2.0|netstandard2.1}]
 
 //Criar projeto mstest
-dotnet new mstest --name {NOME_PROJETO} [-f {netcoreapp2.0|netcoreapp2.1|netcoreapp2.2}]
+dotnet new mstest --name {NOME_PROJETO} [-f {netcoreapp2.0|netcoreapp2.1|netcoreapp2.2|netcoreapp3.0}]
 
 //Adicionar referência de um projeto dentro de outro
 dotnet add {NOME_PROJETO} reference {NOME_PROJETO_REFERENCIADO}
