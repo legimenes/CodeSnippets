@@ -20,6 +20,18 @@ dotnet sln add .\{DIRETORIO_PROJETO}\{NOME_PROJETO}.csproj
 //Ir para a pasta do projeto desejado
 dotnet add package {NOME_PACOTE} [--version={NUMERO_VERSAO}]
 
-//Build da solution
-dotnet build {NOME_SOULUTION}.sln
+//Limpar projeto
+dotnet clean
+
+//Build
+dotnet build [{NOME_SOULUTION.sln|NOME_PROJETO.csproj}]
+
+//Build release
+dotnet build --configuration Release
+
+//Publicação
+dotnet publish [--configuration Release]
+
+//Construir um pacote nuget
+dotnet publish [--configuration Release]
 ```
