@@ -1,6 +1,9 @@
 <h1>Linhas de comando do .NET CLI (Interface de linha de comando) do .NET Core</h1>
 
 ```
+//Instalar dotnet-ef
+dotnet tool install --global dotnet-ef
+
 //Criar solution
 dotnet new sln --name {NOME_SOLUTION}
 
