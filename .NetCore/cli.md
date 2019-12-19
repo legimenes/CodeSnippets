@@ -27,14 +27,8 @@ dotnet add package {NOME_PACOTE} [--version={NUMERO_VERSAO}]
 dotnet clean
 
 //Build
-dotnet build [{NOME_SOULUTION.sln|NOME_PROJETO.csproj}]
-
-//Build release
-dotnet build --configuration Release
+dotnet build [{NOME_SOULUTION.sln|NOME_PROJETO.csproj}] [--configuration Release]
 
 //Publicação
-dotnet publish [--configuration Release]
-
-//Construir um pacote nuget
 dotnet publish [--configuration Release]
 ```
