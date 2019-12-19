@@ -23,16 +23,19 @@ Manter pelo menos as principais propriedades do projeto preenchidas para gerar o
 ```
 
 Gerar um build de release e dentro da pasta onde se encontra o csproj criar o pacote:
+
 ```
 nuget pack -Properties Configuration=Release
 ```
 
 <h2>Publicar o pacote em um repositório local</h2>
+
 ```
 nuget add NomeDoPacote.1.0.0.nupkg -source c:\repo\nuget\
 ```
 
 <h2>Remover o pacote de um repositório local</h2>
+
 ```
 nuget delete NomeDoPacote 1.0.0 -source c:\repo\nuget\
 ```
