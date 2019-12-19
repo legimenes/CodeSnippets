@@ -1,6 +1,13 @@
 <h1>Gerenciamento de pacote nuget</h1>
 
-<h2>Criar um pacote</h2>
+<h2>Criar um pacote através do nuget</h2>
+Gerar um build de release e dentro da pasta onde se encontra o csproj criar o pacote:
+
+```
+nuget pack -Properties Configuration=Release
+```
+
+<h2>Criar um pacote através do cli</h2>
 Manter pelo menos as principais propriedades do projeto preenchidas para gerar o arquivo nuspec. Exemplo de nuspec:
 
 ```
@@ -25,7 +32,7 @@ Manter pelo menos as principais propriedades do projeto preenchidas para gerar o
 Gerar um build de release e dentro da pasta onde se encontra o csproj criar o pacote:
 
 ```
-nuget pack -Properties Configuration=Release
+dotnet pack --configuration Release
 ```
 
 <h2>Publicar o pacote em um repositório local</h2>
