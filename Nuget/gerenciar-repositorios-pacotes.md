@@ -9,13 +9,13 @@ nuget sources
 <h2>Criar um repositório local</h2>
 
 ```
-nuget sources add -name NomeRepositorio -Source PathRepositorio
+nuget sources add -name {NOME_REPOSITORIO} -Source {PATH_REPOSITORIO}
 ```
 
 <h2>Remover um repositório local</h2>
 
 ```
-nuget sources remove -name NomeRepositorio
+nuget sources remove -name {NOME_REPOSITORIO}
 ```
 
 <h2>Criar um pacote através do nuget</h2>
@@ -56,23 +56,23 @@ dotnet pack --configuration Release
 <h2>Publicar o pacote em um repositório local</h2>
 
 ```
-nuget add NomeDoPacote.1.0.0.nupkg -source c:\repo\nuget\
+nuget add {NOME_PACOTE.0.0.0.nupkg} -source {PATH_REPOSITORIO}
 ```
 
 <h2>Remover o pacote de um repositório local</h2>
 
 ```
-nuget delete NomeDoPacote 1.0.0 -source c:\repo\nuget\
+nuget delete {NOME_PACOTE} {NUMERO_VERSAO} -source {PATH_REPOSITORIO}
 ```
 
-<h2>Adicionar referência de um pacote de repositório local</h2>
+<h2>Adicionar referência de um pacote de repositório local através do cli</h2>
 
 ```
-dotnet add package NomePacote [--version 1.0.0] -s PathRepositorio
+dotnet add package {NOME_PACOTE} [--version {NUMERO_VERSAO}] -s {PATH_REPOSITORIO}
 ```
 
-<h2>Remover referência de um pacote de repositório local</h2>
+<h2>Remover referência de um pacote de repositório local através do cli</h2>
 
 ```
-dotnet remove package NomePacote
+dotnet remove package {NOME_PACOTE}
 ```
