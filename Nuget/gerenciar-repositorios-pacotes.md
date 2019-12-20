@@ -1,4 +1,22 @@
-<h1>Gerenciamento de pacote nuget</h1>
+<h1>Gerenciamento de repositórios e pacotes nuget</h1>
+
+<h2>Listar os repositórios configurados</h2>
+
+```
+nuget sources
+```
+
+<h2>Criar um repositório local</h2>
+
+```
+nuget sources add -name NomeRepositorio -Source PathRepositorio
+```
+
+<h2>Remover um repositório local</h2>
+
+```
+nuget sources remove -name NomeRepositorio
+```
 
 <h2>Criar um pacote através do nuget</h2>
 Gerar um build de release e dentro da pasta onde se encontra o csproj criar o pacote:
