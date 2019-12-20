@@ -23,6 +23,13 @@ dotnet sln add .\{DIRETORIO_PROJETO}\{NOME_PROJETO}.csproj
 //Ir para a pasta do projeto desejado
 dotnet add package {NOME_PACOTE} [--version={NUMERO_VERSAO}]
 
+//Adicionar pacote do nuget de repositório local
+//Ir para a pasta do projeto desejado
+dotnet add package {NOME_PACOTE} [--version {NUMERO_VERSAO}] -s {PATH_REPOSITORIO}
+
+//Remover referência de pacote
+dotnet remove package {NOME_PACOTE}
+
 //Limpar projeto
 dotnet clean
 
