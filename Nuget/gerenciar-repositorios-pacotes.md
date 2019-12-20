@@ -64,3 +64,15 @@ nuget add NomeDoPacote.1.0.0.nupkg -source c:\repo\nuget\
 ```
 nuget delete NomeDoPacote 1.0.0 -source c:\repo\nuget\
 ```
+
+<h2>Adicionar referência de um pacote de repositório local</h2>
+
+```
+dotnet add package NomePacote [--version 1.0.0] -s PathRepositorio
+```
+
+<h2>Remover referência de um pacote de repositório local</h2>
+
+```
+dotnet remove package NomePacote
+```
