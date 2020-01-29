@@ -18,36 +18,28 @@ nuget sources add -name {NOME_REPOSITORIO} -Source {PATH_REPOSITORIO}
 nuget sources remove -name {NOME_REPOSITORIO}
 ```
 
-<h2>Criar um pacote através do nuget</h2>
-Gerar um build de release e dentro da pasta onde se encontra o csproj criar o pacote:
-
-```
-nuget pack -Properties Configuration=Release
-```
-
 <h2>Criar um pacote através do cli</h2>
 Manter pelo menos as principais propriedades do projeto preenchidas para gerar o arquivo nuspec. Exemplo de nuspec:
 
 ```
-<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
-  <metadata>
-    <id>LGG.Framework.ADO</id>
-    <version>1.0.0</version>
-    <authors>Leandro</authors>
-    <owners>LGG</owners>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>LGG framework</description>
-    <dependencies>
-      <group targetFramework=".NETStandard2.1">
-        <dependency id="LGG.Framework.OtherLibrary" version="1.0.0" exclude="Build,Analyzers" />
-      </group>
-    </dependencies>
-  </metadata>
-</package>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <Authors>Leandro</Authors>
+    <Company>LGG</Company>
+    <Description>Data access component.</Description>
+    <FileVersion>1.0.0.0</FileVersion>
+    <PackageId>LGG.Framework.ADO</PackageId>
+    <Product>LGG.Framework.ADO</Product>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+</Project>
 ```
 
-Gerar um build de release e dentro da pasta onde se encontra o csproj criar o pacote:
+Empacotar em release:
 
 ```
 dotnet pack --configuration Release
