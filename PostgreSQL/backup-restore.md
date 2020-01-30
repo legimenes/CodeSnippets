@@ -11,6 +11,5 @@ pg_dump.exe –h {NOME_SERVIDOR} –p {PORTA} –U {USUARIO} –F t –f {PATH_D
 <h2>Restore</h2>
 
 ```
-pg_dump.exe –h {NOME_SERVIDOR} –p 5432 –U {USUARIO} –F t –f {PATH_DESTINO}
 pg_restore.exe –h {NOME_SERVIDOR} –p {PORTA} –U {USUARIO} -d {NOME_DATABASE} {PATH_DESTINO}
 ```
