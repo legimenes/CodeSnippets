@@ -1,4 +1,4 @@
-# Gerar certificado RSA
+# Gerar chaves RSA
 
 ### Gerar chave privada
 ```
