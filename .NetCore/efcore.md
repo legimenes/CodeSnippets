@@ -1,4 +1,4 @@
-# Entity Framework Core commands
+# Comandos para o Entity Framework Core
 
 ### Atualizar ferramenta
 ```
@@ -13,4 +13,8 @@ dotnet ef migrations add {migration_name}
 ### Atualizar banco de dados
 ```
 dotnet ef database update
+```
+### Remover ultima migração
+```
+dotnet ef migrations remove
 ```
