@@ -20,6 +20,14 @@ docker ps -a
 docker image inpect {image_name}
 ```
 
+### Criar um container
+Flags:</br>
+-d = rodar em background (sem esperar comandos no prompt)
+-it = modo interativo (aguarda interação)
+```
+docker run --name {container_name} [-d|-it]
+```
+
 ### Inicializar um container específico
 ```
 docker start {container_name}
