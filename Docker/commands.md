@@ -22,10 +22,11 @@ docker image inpect {image_name}
 
 ### Criar um container
 Flags:</br>
--d = rodar em background (sem esperar comandos no prompt)
--it = modo interativo (aguarda interação)
+-d = rodar em background (sem esperar comandos no prompt)</br>
+-it = modo interativo (aguarda interação)</br>
+--restart = inicializa o container automaticamente quando o docker inicializar
 ```
-docker run [-d|-it] --name {container_name} {image_name}
+docker run [-d|-it] --name {container_name} [--restart always] {image_name}
 ```
 
 ### Inicializar um container específico
