@@ -35,3 +35,8 @@ docker run -d --name pgadmin4 --network=postgres-network -p 15444:80 -e "PGADMIN
 ```
 docker exec -it postgres-server psql -U postgres \c {database_name}
 ```
+
+### Comando do PostgreSQL para exportar de um arquivo csv para tabela
+```
+COPY ufs(sigla, nome, codigoibge) FROM '/var/lib/postgresql/data/records.csv' DELIMITER ';' CSV HEADER;
+```
