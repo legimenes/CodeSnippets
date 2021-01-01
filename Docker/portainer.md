@@ -6,7 +6,7 @@ docker pull portainer/portainer
 ```
 
 ### Criar um container
-Flags:</br>
+> Flags:</br>
 -d = rodar em background</br>
 -p = mapeamento das portas (porta local:porta container)</br>
 --name = nome do container</br>
