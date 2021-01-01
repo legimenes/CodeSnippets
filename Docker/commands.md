@@ -15,6 +15,11 @@ docker images -a
 docker ps -a
 ```
 
+### Listar as redes
+```
+docker network ls
+```
+
 ### Exibir informações detalhadas de uma imagem específica
 ```
 docker image inpect {image_name}
