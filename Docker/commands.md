@@ -25,7 +25,7 @@ Flags:</br>
 -d = rodar em background (sem esperar comandos no prompt)
 -it = modo interativo (aguarda interação)
 ```
-docker run [-d|-it] --name {container_name}
+docker run [-d|-it] --name {container_name} {image_name}
 ```
 
 ### Inicializar um container específico
