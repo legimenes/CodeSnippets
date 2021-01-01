@@ -20,9 +20,24 @@ docker ps -a
 docker image inpect {image_name}
 ```
 
-### Remover imagens, contêineres, volumes, e redes que estão pendentes (não associados a um contêiner)
-Flags:
--a = remove adicionalmente quaisquer contêineres e todas as imagens não utilizadas (não apenas imagens pendentes)
+### Inicializar um container específico
+```
+docker start {container_name}
+```
+
+### Exibir a data de um container específico
+```
+docker exec -it {container_id} date
+```
+
+### Executar o shell de um container que possua o recurso
+```
+docker run -it {container_id} sh
+```
+
+### Remover imagens, containeres, volumes, e redes que estão pendentes (não associados a um container)
+Flags:</br>
+-a = remove adicionalmente quaisquer containeres e todas as imagens não utilizadas (não apenas imagens pendentes)
 ```
 docker system prune [-a]
 ```
@@ -35,5 +50,10 @@ docker image rm {image_name}
 ### Remover imagens pendentes (camadas que não têm relação com nenhuma imagem marcada)
 ```
 docker images purge
+```
+
+### Remover um container específico
+```
+docker container rm {container_id}
 ```
 
