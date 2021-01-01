@@ -45,7 +45,7 @@ docker run -it {container_id} sh
 ```
 
 ### Remover imagens, containeres, volumes, e redes que estão pendentes (não associados a um container)
-Flags:</br>
+> Flags:</br>
 -a = remove adicionalmente quaisquer containeres e todas as imagens não utilizadas (não apenas imagens pendentes)
 ```
 docker system prune [-a]
