@@ -28,7 +28,7 @@ docker run -d --name postgres-server -p 5444:5432 --network=postgres-network -e 
 
 ### Criar um container para o pgAdmin4
 ```
-docker run -d --name pgadmin4 --network=postgres-network -p 15444:80 -e "PGADMIN_DEFAULT_EMAIL=culturebeat10@gmail.com" -e "PGADMIN_DEFAULT_PASSWORD=sasa" -v C:\docker\pgadmin4:/var/lib/pgadmin dpage/pgadmin4
+docker run -d --name pgadmin4 --network=postgres-network -p 15444:80 -e "PGADMIN_DEFAULT_EMAIL=leandro@leandro.com" -e "PGADMIN_DEFAULT_PASSWORD=sasa" -v C:\docker\pgadmin4:/var/lib/pgadmin dpage/pgadmin4
 ```
 
 ### Executar o PostgreSQL em modo interativo
