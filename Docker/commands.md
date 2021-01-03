@@ -46,7 +46,7 @@ docker exec -it {container_id} date
 
 ### Executar o shell de um container que possua o recurso
 ```
-docker run -it {container_id} sh
+docker run -it {container_name} sh
 ```
 
 ### Remover imagens, containeres, volumes, e redes que estão pendentes (não associados a um container)
