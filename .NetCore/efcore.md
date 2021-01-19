@@ -7,7 +7,7 @@ dotnet tool update --global dotnet-ef
 
 ### Criar migração
 ```
-dotnet ef migrations add {migration_name} [-o {/Data/Migrations}] [--verbose]
+dotnet ef migrations add {migration_name} [-o {Data/Migrations}] [--verbose]
 ```
 
 ### Atualizar banco de dados
