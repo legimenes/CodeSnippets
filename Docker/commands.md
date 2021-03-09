@@ -46,12 +46,12 @@ on-failure = reinicializar somente em caso de erro</br>
 always = sempre reinicializa o container se parar, se for parado manualmente é reinicializado somente quando o Docker daemon iniciar ou for inicializado manualmente</br>
 unless-stopped = igual o always, exceto que se for parado manualmente não é reinicializado mesmo depois que o Docker daemon iniciar
 
-####Configurando a política de restart para um container parado
+#### Configurando a política de restart para um container parado
 ```
 docker run -d --restart {no|on-failure|always|unless-stopped} {container_name}
 ```
 
-####Configurando a política de restart para um container em execução
+#### Configurando a política de restart para um container em execução
 ```
 docker update --restart {no|on-failure|always|unless-stopped} {container_name}
 ```
