@@ -14,5 +14,5 @@ docker pull portainer/portainer
 -v /var/run/docker.sock:/var/run/docker.sock = permite gerenciar um ambiente Docker local</br>
 -v = volume especificando o diretório de saída do sistema operacional
 ```
-docker run -d --name portainer -p 9000:9000 --restart always -v /var/run/docker.sock:/var/run/docker.sock -v C:\docker\portainer\data:/data portainer/portainer
+docker run -d --name portainer -p 7000:9000 --restart always -v /var/run/docker.sock:/var/run/docker.sock -v C:\docker\portainer\data:/data portainer/portainer
 ```
